@@ -1,0 +1,177 @@
+@import "./color.scss";
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(54, 132, 173, 0.549);
+    border-radius: 0 0 200px 200px;
+
+
+    main{
+        position: absolute;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+        justify-content: center;
+
+    h2{
+        font : 400 5rem "Poppins";
+        color:white;
+    }
+    p{
+        font:900 2rem "Poppins";
+        color: $first;
+    }
+    }
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: no-repeat center/auto url("../assets/wave-8253292_1920.jpg");
+        filter: blur(1px);
+        border-radius: 0 0 100px 100px;
+    }
+}
+
+.home2{
+    width: 100%;
+    height: 120vh;
+    background-color: aquamarine;
+    padding: 45px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -100px;
+
+    img{
+        padding: 16px;
+        width: 30%;
+        animation: imgUp 0.7s linear infinite alternate;
+    }
+    div{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3rem;
+        height: 100vh;
+
+    p{
+        color: rgb(47, 77, 155);
+        letter-spacing: 2px;
+        word-spacing: 5px;
+        font-weight: 2rem ;
+    }
+
+    }
+}
+
+@keyframes imgUp{
+    to{
+        transform: translateY(-12px);
+    }
+}
+
+
+.home3{
+    width: 100%;
+    height: 120vh;
+    background-color: $second;
+    display: flex;
+    margin-top: -180px;
+
+    div{
+        width: 70%;
+        height: 100vh;
+        background-color: $first;
+        border-radius: 0 200px 200px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+
+        h2{
+            text-transform: uppercase;
+            border-bottom: 3px solid $dark;
+            padding: 0.7rem;
+            width: 12rem;
+            columns: $dark;
+        }
+
+        p{
+            padding: 5rem;
+            letter-spacing: 1px;
+            word-spacing: 5px;
+            line-height: 150px;
+            font: italic 1.2rem $text2;
+        }
+    }
+}
+
+
+.home4{
+    width: 100%;
+    height: 100vh;
+    background-color: $second;
+    display: flex;
+    justify-content: flex-end;
+
+    >div{
+        background-color: $third;
+        border-radius: 200px 0 0 200px;
+        width: 70%;
+        height: 70vh;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    h2{
+        color: $first;
+        text-transform: uppercase;
+        width: 130px;
+        border-bottom: 2px solid $first;
+        padding: 1rem;
+        }
+    >article{
+        display: flex;
+        margin: 2rem 0;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        >div{
+            animation: imgUp 0.7s linear infinite alternate;
+            margin: 1rem;
+            height: 10rem;
+            width: 10rem;
+            background-color: $first;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: $dark;
+            cursor: pointer;
+            transition: all 0.5s;
+
+            &:hover{
+                filter: invert(2);
+            }
+            svg{
+                font-size: 3rem;
+            }
+            p{
+                font :900 1.2rem $text2;
+            }
+        }
+    }
+
+
+    }
+}
